@@ -180,6 +180,13 @@ void print_sastantua(int arg)
 }
 
 int main (int argc, char **argv) {
+
+	int	*bima;
+
+	bima = ft_calloc(42, 42);
+	if (!bima)
+		return (1);
+	free(bima);
 	if (argc != 2)
 		return 0;
 	print_sastantua(ft_atoi(argv[1]));
